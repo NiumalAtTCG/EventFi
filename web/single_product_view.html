@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css\boostrap.css">
+  <link rel="stylesheet" href="css\style.css" />
+  <link rel="stylesheet" href="css/notification.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+
+
+
+  <style>
+    /* Center the dropdown menu */
+    
+  </style>
+</head>
+
+<body onload="loadProduct(); loadHeader();">
+  <!-- ****************************header********************** -->
+       <div class="container-fluid navbar-light bg-light  sticky-top shadow-sm " id="headerContent">
+
+  </div>
+          
+    <!-- ****************************END-header********************** -->
+         <!-- ****************************************single_Product   Single Product-View**************************** -->
+    <div class="container-fluid bg-lgblue p-4  d-flex justify-content-center justify-content-lg-start">
+
+        <div class=" bg-lgblue p-5">
+            <div class="row   text-start">
+                <h1 class=" SectionHeader__Heading text-center text-lg-start fw-semibold" id="product-title">Beat Bash</h1>
+            </div>
+            <div class="row mt-2 ">
+                <p class="  text-center text-lg-start  fs-5 fw-light"><span class="material-symbols-outlined">
+                        location_on
+                    </span ><span id="product-location">Cinnamon Lakeside Colombo 0</span></p>
+                <p class=" text-center text-lg-start "><span class="material-symbols-outlined">
+                        calendar_month
+                    </span><span id="product-published-on">Oct 04, 2024 • 04.00 PM</span></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- ****************************************single_Product   Single Product-View**************************** -->
+    <div class="container ">
+
+        <div class="col-12 d-flex justify-content-center justify-content-lg-between">
+            <div class="row justify-content-center justify-content-lg-between">
+                <!-- *********************************************************discription************************************************** -->
+                <div class="col-12 col-lg-6  mt-5">
+                    <h3 class="text-center text-lg-start ">Description</h3>
+                    <p id="product-description">
+                        More info
+                        Vivid Vibes Proudly Presents
+
+                        Beat Bash
+
+
+                        Featuring:
+
+                        Shihan | Wasthi | Falan | Mora | Dilo
+
+
+                        At Surapura Open Air Theatre
+
+                        5th October 7.30 Pm Onwards
+
+                        Ticket Policy
+                        Only the initial email or SMS provided by MyTicketsLK will be accepted as proof of purchase,
+                        Tickets will
+                        not be redeemed for any forwarded or screenshots.
+
+
+
+                        Valid NIC or Passport will be required if needed during the process of Redeeming.
+                    </p>
+
+                </div>
+                <!-- *********************************************************discription************************************************** -->
+
+                <!-- ****************************************************single-Product Cart******************************************************** -->
+                <div class="d-flex justify-content-end card col-12 col-lg-6 banner " style=" width: 20rem;">
+                    <img id="image" src="images\WhatsApp Image 2024-08-16 at 8.29.35 AM-1723778695465.jpeg" class="card-img-top rounded-3" alt="Product-Images">
+                    <div class="card-body ">
+                        <h5 class="cart_title " id="product-title-1">Beat Bash</h5>
+
+                        <input id="add-to-cart-qty" value="1" class="form-control mb-2" type="number" placeholder="Ticket Quantity" aria-label="default input example" min="0">
+
+                        <p class="d-flex"><span class="material-symbols-outlined">
+                                sell
+                            </span >RS<span id="product-price">-2,500</span></p>
+                        <p>T-QTY :<span id="product-qty"></span></p>
+                        
+                        
+                        
+
+                        <button id="add-to-cart-main" class="common-btn text-center mb-2" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">ADD TO
+                            CART</button>
+                    </div>
+                </div>
+                <!-- ****************************************************single-Product Cart******************************************************** -->
+            </div>
+        </div>
+        <!-- ********************************************************simmiler_product-sub lable**************************************** -->
+
+        <div class="  p-5 ">
+            <div class="row align-items-center">
+                <h1 class=" SectionHeader__Heading  text-center fw-semibold">SIMMILER EVENTS</h1>
+            </div>
+            <div class="row align-items-center">
+                <h1 class="   text-center fs-5 fw-light">Discover your favorite entertainment right here ...</h1>
+            </div>
+        </div>
+        <!-- ********************************************************simmiler_product-sub lable**************************************** -->
+
+        <!-- ****************************************************simmiler products******************************************* -->
+
+        <div class="col-12  d-flex justify-content-between text-start">
+            <div class="row justify-content-center" id="similer-product-main">
+
+                <div id="similer-product" class="card m-3 " style=" width: 18rem;">
+                    <a id="similer-product-a">  <img id="similer-product-image" src="images\WhatsApp Image 2024-08-16 at 8.29.35 AM-1723778695465.jpeg"
+                        class="card-img-top rounded-3" alt="..."></a>
+                    <div class="card-body ">
+                        <h5 id="similer-product-title" class="cart_title ">Beat Bash</h5>
+                        <p class="d-flex"><span class="material-symbols-outlined">
+                                calendar_month
+                            </span><span id="similer-product-date">Oct 04, 2024 • 04.00 PM</span></p>
+                        <p class="d-flex "><span class="material-symbols-outlined">
+                                location_on
+                            </span><span class="fs-6 " id="similer-product-location">Cinnamon Lakeside Colombo 02</span></p>
+                        <p class="d-flex  "><span class="material-symbols-outlined">
+                                sell
+                            </span><span id="similer-product-price">-2,500</span></p>
+                        <a  href="#" class="text-decoration-none " id="similer-product-add-to-cart"><button class="common-btn text-center" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">ADD TO
+                            CART</button></a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- ****************************************************simmiler products******************************************* -->
+    </div>
+
+<!--  <script src="js/bootstrap.bundle.js"></script>-->
+   <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/single-product-view.js"></script>
+  <script src="js/notification.js"></script>
+     
+  
+  
+</body>
+
+</html>

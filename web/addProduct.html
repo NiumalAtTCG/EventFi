@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="css\boostrap.css">
+        <link rel="stylesheet" href="css\style.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link href="css/notification.css" rel="stylesheet"/>
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    <body onload="loadFeatures(); loadHeader();">
+        <!-- ****************************header********************** -->
+        <div class="container-fluid navbar-light bg-light  sticky-top shadow-sm " id="headerContent">
+
+        </div>
+        <!-- ****************************END-header********************** -->
+        <!-- ******************************************addproduct sub-title********** -->
+        <div class="container-fluid bg-lgblue p-3 ">
+            <div class=" bg-lgblue p-2 ">
+                <div class="row align-items-center">
+                    <h1 class=" SectionHeader__Heading  text-center fw-semibold">ADD YOUR TICKETS</h1>
+                </div>
+                <div class="row align-items-center">
+                    <h1 class="   text-center fs-5 fw-light">5% of selling profit include as tax ...</h1>
+                </div>
+            </div>
+
+        </div>
+        <!-- ******************************************addproduct sub-title********** -->
+        <!-- ***********************************addProduct Form**************************** -->
+        <div class="container">
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="col-12 mt-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    CATEGORY
+                                </label>
+                                <select id="categorySelect" onchange="updateEvents();" class="form-select" >
+                                    <option value="0">Select</option>
+
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    EVENT
+                                </label>
+                                <select id="eventSelect" class="form-select" >
+                                    <option value="0">Select</option>
+
+                                </select>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    TITLE
+                                </label>
+                                <input type="text" class="form-control" placeholder="Event Name" id="title" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    EVENT ON
+                                </label>
+                                <input type="date" class="form-control" placeholder="Event Name" id="eventOn" />
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    DESCRIPTION
+                                </label>
+                                <textarea class="form-control" rows="3" id="description"></textarea>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    PRIICE
+                                </label>
+                                <input type="text" class="form-control" placeholder="Event Name" id="price" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    ADD QUANTITY
+                                </label>
+                                <input type="number" class="form-control" placeholder="Event Name" id="quantity" min="0" />
+                            </div>
+
+                            <div class="col-6  ">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    EVENT AT
+                                </label>
+                                <input type="text" class="form-control" placeholder="Event Name" id="eventAt" />
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label fw-bold" style="font-size: 20px;">
+                                    THUMBNAIL
+                                </label>
+                                <input class="form-control" type="file" id="image">
+                            </div>
+
+                            <div class="col-12 mt-4 mb-4">
+                                <button class="common-btn" onclick="productListing()" >ADD PRODUCT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***********************************addProduct Form**************************** -->
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/add-product.js"></script>
+        <script src="js/notification.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+
+</html>

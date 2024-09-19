@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>GOKU</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/login.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/notification.css">
+    </head>
+    <body>
+
+        <div class="login_div">
+            <div class="login_div_body ">
+                <h4 class="login_hedding">LOGIN</h4>
+                <h6 class="login_paragraph mt-2">Please enter your e-mail and password:</h6>
+              
+                <input  type="text" placeholder="email" autocomplete="off" id="email"/>
+                <input type="password" placeholder="Password" autocomplete="off" id="password"/>
+                <button type="button" onclick="signIn();" class="login_btn"><span>LOGIN</span></button>
+                <a class="create-new-acc mt-5 mb-2 fw-normal" href="user_signup.html">Forgot your password?</a>
+                <p>New Customer?<a class="create-new-acc mt-2 fw-normal" href="user_signup.html"> Sign up</a></p> 
+
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/user-login.js"></script>
+        <script src="js/notification.js"></script>
+        
+    </body>
+</html>

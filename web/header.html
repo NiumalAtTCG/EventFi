@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="css\style.css" />
+  <link rel="stylesheet" href="css\boostrap.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    </head>
+    <body  >
+        <div  class="container-fluid navbar-light bg-light  sticky-top shadow-sm " onload="checkSignIn();" id="headerContent">
+    <nav class=" navbar navbar-expand-lg   ">
+
+
+      <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="material-symbols-outlined">
+          menu
+        </span>
+
+      </button>
+        <div class="d-flex d-lg-none justify-content-center"><img  src="images/logo_tick .png" style="width: 200px;" alt="Logo"></div>
+      <div  class="d-flex d-lg-none justify-content-center">
+          <span onclick="gotosearch()" class="d-flex  d-lg-none material-symbols-outlined text-black me-2 " > search </span>
+      <span  onclick="gotocart();" class=" d-flex d-lg-none material-symbols-outlined text-black me-2" > shopping_cart</span>
+      <span class="d-flex d-lg-none material-symbols-outlined text-black me-2 "> account_circle</span>
+      </div>
+
+      <div class="collapse navbar-collapse   navbar-scroll d-lg-flex justify-content-lg-between"
+        id="navbarSupportedContent">
+        <ul class=" navbar-nav ms-4 mt-3 mt-lg-0 mb-2 mb-lg-0 text-center">
+          <li class="nav-item  ">
+              <a onclick="gotoindex();" class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Concert</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Deals</a>
+          </li>
+ 
+
+        </ul>
+
+          <div class=" d-none d-lg-block"> <img class="logo  me-5" src="images/logo_tick .png" style="width: 150px;" alt="Logo"></div>
+        <ul class="navbar-nav mb-2 mb-lg-0 d-none d-lg-flex">
+
+          <li class="nav-item">
+              <a class="nav-link" href="#"><span class="material-symbols-outlined text-black" onclick="gotosearch();">
+                search
+              </span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><span class="material-symbols-outlined text-black" onclick="gotocart();">
+                shopping_cart
+              </span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <span class="material-symbols-outlined text-black">
+                account_circle
+              </span>
+            </a>
+            <ul class="dropdown-menu text-center p-1" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" type="button" onclick="gotoaddproduct();" >ADD PRODUCT</a></li>
+              <li><a class="dropdown-item" href="#">ORDERS</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li  ><a id="st-button-1" class="dropdown-item"  href="user_login.html">LOGIN</a></li>
+              <li  ><a id="st-div-1"  class="dropdown-item text-danger " type="button" href="SignOut">SIGNOUT</a></li>
+              
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+         <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/index.js"></script>
+  
+    </body>
+</html>

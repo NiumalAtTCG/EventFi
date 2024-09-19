@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="css\boostrap.css">
+        <link rel="stylesheet" href="css\style.css" />
+        <link rel="stylesheet" href="css/notification.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+
+
+    </head>
+
+    <body  onload="loadData(); loadHeader();">
+        <!-- ****************************header********************** -->
+        <div class="container-fluid navbar-light bg-light  sticky-top shadow-sm " id="headerContent">
+
+        </div>
+
+        <!-- ****************************END-header********************** -->
+        <!-- ***************************************chequout Sub Bar********************************************* -->
+        <div class="container-fluid bg-lgblue p-2  d-flex justify-content-center justify-content-lg-start">
+
+            <div class="container-fluid bg-lgblue p-2 mb-3">
+                <div class=" bg-lgblue p-2 ">
+                    <div class="row align-items-center">
+                        <h1 class=" SectionHeader__Heading  text-center fw-semibold">ORDER DETAILS</h1>
+                    </div>
+                    <div class="row align-items-center">
+                        <h1 class="   text-center fs-5 fw-light">BUY YOUR E-TICKET  ...</h1>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- ***************************************chequout Sub Bar********************************************* -->
+
+        <div class="container ">
+            <div class="col-12 p-3">
+                <div class="row">
+                    <div class="col-12 col-lg-4 lineborder  p-4 mt-5">
+                        <!-- **************************************************user-form************************************ -->
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="form-group input-group form-check-label text-center">
+                                    <input type="checkbox" id="checkbox1">
+                                    <label for="checkbox1">&nbsp; Same as your current address?</label>
+                                </div>
+
+                                <div class="col-12 mb-4">
+                                    <label class="form-label fw-semibold" style="font-size: 20px;">
+                                        FIRST NAME
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Event Name"  id="first-name" />
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold" style="font-size: 20px;">
+                                        LAST NAME
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Event Name" id="last-name" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold" style="font-size: 20px;">
+                                        CITY
+                                    </label>
+                                    <select id="city" class="form-select" >                                 
+                                        <option value="0">Select</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold" style="font-size: 20px;">
+                                        EMAIL
+                                    </label>
+                                    <input id="email" type="text" class="form-control" placeholder="Event Name" id="title" />
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold" style="font-size: 20px;">
+                                        MOBILE
+                                    </label>
+                                    <input type="text" class="form-control" placeholder="Event Name"  id="mobile" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- **************************************************user-form************************************ -->
+                    </div>
+                    <div class="col-2"></div>
+
+                    <!-- ************************************************chequout Ticket ******************************************** -->
+                    <div class="col-12 col-lg-6 p-4 mt-5">
+                        <div class="col-12">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+
+
+                                        <th scope="col">TICKETS</th>
+                                        <th class="text-end" scope="col">SUBTOTAL</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="st-tbody">
+                                    <tr id="st-item-tr">
+
+
+                                        <td><span id="st-item-title">Product-1</span >&nbsp;&nbsp;X&nbsp; <span id="st-item-qty" class="quantity">x1</span></td>
+                                        <td>Rs. <span id="st-item-subtotal">100,000.00</span></td>
+                                    </tr>
+
+
+
+                                    <tr class="order-total" id="st-order-total-tr">
+                                        <th>TOTAL</th>
+                                        <th class="order-total-amount">Rs. <span id="st-total">251,000.00</span></th>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="form-check">
+                                <label class="form-check-label" for="flexCheckDefault"  type="radio" id="radio6" name="payment" checked>
+                                    Visa Card
+                                </label>
+                                <input class="form-check-input" type="checkbox" id="flexCheckDefault" checked>
+
+                            </div>
+                            <button class="common-btn mt-4" onclick="checkout();">Proceed to checkout</button>
+                        </div>
+
+                    </div>
+                    <!-- ************************************************chequout Ticket ******************************************** -->
+                    <script type="text/javascript" src="https://www.payhere.lk/lib/payhere.js"></script>
+                    <script src="js/index.js"></script>
+                    <script src="js/bootstrap.bundle.js"></script>
+                    <script src="js/notification.js"></script>
+                    <script src="js/checkout.js"></script>
+
+
+                    </body>
+
+                    </html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css\boostrap.css">
+  <link rel="stylesheet" href="css\style.css" />
+  <link rel="stylesheet" href="css/notification.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+
+
+  <style>
+    /* Center the dropdown menu */
+    
+  </style>
+</head>
+
+<body onload="loadCartItems(); loadHeader();">
+  <!-- ****************************header********************** -->
+      <div class="container-fluid navbar-light bg-light  sticky-top shadow-sm " id="headerContent">
+
+  </div>
+          
+    <!-- ****************************END-header********************** -->
+    <div class="content-fluid p-2">
+        <!-- ***************************************cart_Sub_Bar************************* -->
+        <div class="container-fluid bg-lgblue p-3 mb-3">
+            <div class=" bg-lgblue p-2 ">
+                <div class="row align-items-center">
+                    <h1 class=" SectionHeader__Heading  text-center fw-semibold">CART</h1>
+                </div>
+                <div class="row align-items-center">
+                    <h1 class="   text-center fs-5 fw-light">Discover your favorite entertainment right here ...</h1>
+                </div>
+            </div>
+
+
+        </div>
+            <!-- ***************************************cart_Sub_Bar************************* -->
+
+            <!-- ****************************************cart_Table******************************** -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th >Event</th>
+                    <th >Title</th>
+                    <th >Price</th>
+                    <th >Tickets</th>
+                    <th >Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cart-item-container">
+                <tr id="cart-item-row">
+                    <th ><a id="cart-item-a" href="#"><img id="cart-item-image" src="images\WhatsApp Image 2024-08-16 at 8.29.35 AM-1723778695465.jpeg" style=" width: 3rem;" alt=""></a></th>
+                    <td id="cart-item-title"></td>
+                    <td id="cart-item-price"></td>
+                    <td><input value="1" type="number" id="cart-item-quantity" class="form-control mb-2"  placeholder="Ticket Quantity"  min="0">
+                    </td>
+                    <td id="cart-item-subtotal"></td>
+
+                </tr>
+
+            </tbody>
+        </table>
+        
+            <!-- ****************************************cart_Table******************************** -->
+    </div>
+    <!-- ******************************************************Cart Summery***************** -->
+<div class="container d-flex justify-content-end" >
+<div class=" col-12 col-lg-3 ">
+        <div class="row">
+
+            <div class="col-12">
+                <label class="form-label fs-3 fw-bold text-capitalize "> SUMMARY</label>
+            </div>
+
+            <div class="col-12">
+                <hr />
+            </div>
+
+            <div class="col-6 mb-3">
+                <span   class="fs-6 fw-bold">Tickets ()</span>
+            </div>
+
+            <div class="col-6 text-end mb-3">
+                <span id="cart-total-qty" class="fs-6 fw-bold">Rs..00</span>
+            </div>
+
+            <div class="col-12 mt-3">
+                <hr />
+            </div>
+
+            <div class="col-6 mt-2">
+                <span class="fs-4 fw-bold">Total</span>
+            </div>
+
+            <div class="col-6 mt-2 text-end">
+                <span id="cart-total" class="fs-4 fw-bold">Rs. .00</span>
+            </div>
+
+            <div class="col-12 mt-3 mb-3 d-grid">
+                <button class="common-btn" onclick="gotoChechout();">CHECKOUT</button>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/notification.js"></script>
+  <script src="js/cart.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>

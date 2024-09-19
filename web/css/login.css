@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 30, 2024, 9:46:20 PM
+    Author     : User
+*/
+:root{
+     --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif; 
+    --font1:"Nunito Sans", sans-serif;
+}
+.login_div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login_div_body{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    gap: 2px
+
+}
+.login_hedding{
+    font-family: Montserrat, sans-serif;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.login_paragraph{
+
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: lighter;
+}
+input[type="text"],input[type="email"], input[type="password"] {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-family: var(--font1);
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight:500;
+    text-decoration: none;
+
+}
+.login_btn{
+    display: block;
+    width: 400px;
+    padding: 10px;
+    font-family: Montserrat, sans-serif;
+    background-color: #333;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    top: 10px;
+    /*    margin-left: 10%;*/
+}
+.login_btn span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.login_btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    border:  1px solid  #333; 
+    transform-origin: left center;
+    transition: all .35s;
+  }
+  
+  
+ .login_btn:hover{
+    color: #333;
+  }
+  
+  .login_btn:hover:after{
+    width: 100%;
+  }
+.create-new-acc{
+    text-decoration: none;
+    font-family:sans-serif;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bolder;
+
+
+}#add-to-cart-main {
+
+}
